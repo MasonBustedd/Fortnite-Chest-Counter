@@ -1,5 +1,6 @@
-**What's new in 1.6.0**
-- **New design** of the window and the report: clearer colors and contrast, consistent corners and shadows, clearer buttons and focus states. Nothing else changed.
+**What's new in 1.6.1**
+- **New design** of the window: dark cards in the dark theme, evenly sized counter tiles, readable fields and warnings in both themes. Nothing else changed.
+- Version 1.6.0 had the same design, without these fixes.
 - Fork of [LED-N/Fortnite-ChestCounter](https://github.com/LED-N/Fortnite-ChestCounter): updates now come from this repository.
 
 ---

@@ -140,8 +140,8 @@ public static class GuiPage
         <!doctype html><html><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
         <title>Chest Counter</title>
         <style>__FONT__
-        :root{--bg:#0d1820;--ink:#f3e8cc;--muted:#c7bea9;--title:#f5c962;--card:#f4ead2;--cink:#2a1c0f;--cmuted:#5d4b34;--line:#d6c292;--track:#e8dbb8;--gold:#d4a84f;--team:#1f8a84;--warn:#b3361f;--shadow:0 1px 2px rgba(0,0,0,.25),0 6px 18px rgba(0,0,0,.18);--radius:12px}
-        @media (prefers-color-scheme:light){:root{--bg:#f1e7d0;--ink:#2a1c0f;--muted:#5d4b34;--title:#7a4a1e;--card:#fffaf0;--line:#e0cda4;--track:#f1e5c8;--shadow:0 1px 2px rgba(80,55,20,.08),0 6px 16px rgba(80,55,20,.08)}}
+        :root{--bg:#0b141b;--ink:#f3e8cc;--muted:#aeb7bb;--title:#f5c962;--card:#152530;--cink:#f3e8cc;--cmuted:#9fb0b8;--line:#2b4252;--track:#203645;--gold:#d4a84f;--team:#1f8a84;--warn:#e0684f;--shadow:0 1px 2px rgba(0,0,0,.35),0 8px 22px rgba(0,0,0,.25);--radius:12px}
+        @media (prefers-color-scheme:light){:root{--bg:#f1e7d0;--ink:#2a1c0f;--muted:#5d4b34;--title:#7a4a1e;--card:#fffaf0;--cink:#2a1c0f;--cmuted:#5d4b34;--line:#e0cda4;--track:#f1e5c8;--shadow:0 1px 2px rgba(80,55,20,.08),0 6px 16px rgba(80,55,20,.08)}}
         *{box-sizing:border-box}
         body{margin:0;background:var(--bg);color:var(--ink);font:15px/1.5 "Segoe UI",system-ui,sans-serif}
         main{max-width:1080px;margin:0 auto;padding:24px 16px 40px;display:flex;flex-direction:column;gap:20px}
@@ -169,9 +169,9 @@ public static class GuiPage
         nav button:focus-visible{outline:3px solid var(--title);outline-offset:2px}
         h2{margin:0 0 12px;font-size:26px;color:var(--title)}
         .tiles{display:grid;grid-template-columns:repeat(auto-fit,minmax(170px,1fr));gap:14px}
-        .tile{background:var(--card);color:var(--cink);border:1px solid var(--line);border-radius:var(--radius);padding:16px 18px;box-shadow:var(--shadow)}
-        .tile .v{font-size:36px;font-weight:700;line-height:1.1}
-        .tile .l{font-size:13px;color:var(--cmuted)}
+        .tile{display:flex;flex-direction:column;gap:6px;min-height:138px;background:var(--card);color:var(--cink);border:1px solid var(--line);border-radius:var(--radius);padding:16px 18px;box-shadow:var(--shadow)}
+        .tile .v{font-size:38px;font-weight:700;line-height:1.05}
+        .tile .l{font-size:13px;line-height:1.4;color:var(--cmuted)}
         .tile.hero{position:relative;background:#7a4a1e;color:#fbecc4;border:2px solid #e7b440}
         .editbtn{position:absolute;top:10px;right:10px;width:36px;height:36px;padding:0;border-radius:8px;border:1px solid #e7b440;background:transparent;color:#ffd36a;cursor:pointer;display:grid;place-items:center}
         .editbtn:hover{background:rgba(231,180,64,.18)}.editbtn:focus-visible{outline:3px solid #ffd36a;outline-offset:2px}
@@ -192,7 +192,8 @@ public static class GuiPage
         button.b.main{background:#7a4a1e;color:#fbecc4;border-color:#e7b440}
         button.b.main:hover{background:#8f5a26}
         button.b.danger{border-color:var(--warn);color:var(--warn)}
-        select,input[type=text],input[type=number]{min-height:40px;padding:6px 10px;border-radius:6px;border:1px solid var(--line);background:#fffaf0;color:var(--cink);font:15px "Segoe UI",system-ui,sans-serif}
+        select,input[type=text],input[type=number]{min-height:40px;padding:6px 10px;border-radius:8px;border:1px solid var(--gold);background:var(--track);color:var(--cink);font:15px "Segoe UI",system-ui,sans-serif}
+        select:focus-visible,input:focus-visible{outline:3px solid var(--title);outline-offset:1px}
         input[type=text]{width:min(520px,100%)}
         .switch{position:relative;display:inline-block;width:52px;height:30px;flex:none;vertical-align:middle}
         .switch input{opacity:0;width:100%;height:100%;margin:0;cursor:pointer;position:absolute;z-index:1}
@@ -220,8 +221,9 @@ public static class GuiPage
         .mhist .mx{border:0;background:none;color:var(--cmuted);font-size:18px;line-height:1;cursor:pointer;padding:2px 7px;border-radius:4px}
         .mhist .mx:hover{color:var(--warn);background:rgba(163,54,31,.1)}
         .notice{position:relative;display:flex;gap:12px;align-items:flex-start;border-left:6px solid var(--gold)}
-        .notice.warning{border-left-color:#c8412f;background:#fbe9d0}
-        .notice .ni{flex:none;width:24px;height:24px;border-radius:50%;display:grid;place-items:center;font:700 14px "Segoe UI",system-ui,sans-serif;background:var(--gold);color:#fff;margin-top:1px}
+        .notice.warning{border-left-color:#e0684f;background:#3a211b}
+        @media (prefers-color-scheme:light){.notice.warning{border-left-color:#c8412f;background:#fbe9d0}}
+        .notice .ni{flex:none;width:24px;height:24px;border-radius:50%;display:grid;place-items:center;font:700 14px "Segoe UI",system-ui,sans-serif;background:var(--gold);color:var(--cink);margin-top:1px}
         .notice.warning .ni{background:#c8412f}
         .notice .nb{flex:1;min-width:0}.notice .nt{font-weight:700;margin-bottom:2px}.notice .nx{white-space:pre-line}
         .notice .actions{margin-top:10px}

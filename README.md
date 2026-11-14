@@ -12,6 +12,11 @@
 
 > Fork of [LED-N/Fortnite-ChestCounter](https://github.com/LED-N/Fortnite-ChestCounter) (MIT). This version has a redesigned interface; the counting and the replay reading are the original project's work.
 
+**What's different in this fork**
+- Redesigned window and home tab: dark cards in dark mode, clearer buttons and focus states, readable fields and warnings in both themes.
+- Updates come from this repository (MasonBustedd/Fortnite-Chest-Counter), not from the original.
+- Download `ChestCounter.exe` from the [latest release](https://github.com/MasonBustedd/Fortnite-Chest-Counter/releases/latest).
+
 <img src="docs/overlay-en.png" alt="Overlay between two matches" height="150">&nbsp;&nbsp;&nbsp;&nbsp;<img src="docs/overlay-match-en.png" alt="Overlay during a match" height="150">
 
 [**⬇ Download ChestCounter.exe**](../../releases/latest) · Windows 10 / 11 · free · no install
