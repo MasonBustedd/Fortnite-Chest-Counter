@@ -1,3 +1,9 @@
+**What's new in 1.6.0**
+- **New design** of the window and the report: clearer colors and contrast, consistent corners and shadows, clearer buttons and focus states. Nothing else changed.
+- Fork of [LED-N/Fortnite-ChestCounter](https://github.com/LED-N/Fortnite-ChestCounter): updates now come from this repository.
+
+---
+
 **English** · Download **`ChestCounter.exe`** below and run it. Nothing to install. Already using it? The counter offers the update on its home tab: **Install version 1.5.1** in 1.4.0 (arrow keys, then Enter), the **Install** button in 1.5.0. Your history and settings are kept.
 
 > **Turn on replays in Fortnite first**: *Settings → Game → Replays → Record Replays: On*. The tool only reads these replay files: no game modification, no access to the game's memory. It only goes online to GitHub: the check for a new version (can be turned off) and, once, the treasure pictures.
