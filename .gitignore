@@ -7,3 +7,5 @@ dist-*/
 *.replay
 # debug dumps of the parser (ParseMode.Debug)
 cmds/
+# web interface: dependencies (the built page is committed)
+web/node_modules/

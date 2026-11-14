@@ -603,3 +603,16 @@ This project builds upon several open-source projects and external resources:
 </div>
 
 > This project is not affiliated with, endorsed by or sponsored by Epic Games. Fortnite is a trademark of Epic Games, Inc.
+
+
+## Developing the interface
+
+The window is a React app in `web/`. Its built page is committed in `src/ChestCounter/gui/index.html` and embedded in the exe, so building the exe does not need Node.js. After a change to `web/`:
+
+```
+cd web
+npm install
+npm run build
+```
+
+Then build the exe as usual (`build.bat`).
